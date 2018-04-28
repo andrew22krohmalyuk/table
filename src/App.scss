@@ -1,0 +1,37 @@
+
+.App {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.Table {
+  display: flex;
+
+  &__item {
+    padding: 5px 12px;
+    min-width: 70px;
+    display: inline-block;
+
+    border: 1px solid #ccc;
+  }
+
+  &__row {
+    display: block;
+    border-collapse: collapse;
+    border-right: 0;
+  }
+
+  &__vertical-scroll {
+    max-height: 300px;
+    overflow: scroll;
+    position: relative;
+  }
+
+  &__horizontal-scroll {
+    max-height: 300px;
+    width: 292px;
+    overflow: auto;
+    white-space: nowrap;
+  }
+}
